@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <title>Error</title>
+  <style>
+    :root {
+      --main-bg-color: #fee340;
+      --secondary-bg-color: #f1f3f4;
+      --main-text-color: #032944;
+      --secondary-text-color: #333;
+    }
+    * {padding: 0; margin: 0;}
+    html,body {font-size: 14px; font-family: Lato, sans-serif}
+    body {text-align: center; background: var(--secondary-bg-color);}
+    ul {list-style: none;}
+    .flex {display: flex; display: -moz-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox;}
+    .justify-content-center {-webkit-box-pack: center; -ms-justify-content: center; -moz-justify-content: center; -o-justify-content: center; -webkit-justify-content: center; justify-content: center;}
+    .align-items-center {-webkit-box-align: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; -o-align-items: center; align-items: center;}
+    .text-decoration-no {text-decoration: none !important;}
+    ul li, .products-list a {display: inline-block;}
+    .main-theme {background: var(--main-bg-color); color: var(--secondary-text-color);}
+    .light-theme {background: var(--secondary-bg-color);}
+    .white-theme {background: var(--secondary-bg-color); color: var(--main-text-color);}
+    .main-theme a {color: #c93030; text-decoration: underline;}
+    section {max-width: 1200px; margin: 0 auto; padding: 2.14rem; box-sizing: border-box;}
+    section h1 {font-size: 3rem; margin-bottom: 16px;}
+    section h2 {font-size: 1.8rem; margin-bottom: 16px;}
+    section p {line-height: 1.5; font-size: 1.3rem;}
+    .main {position: relative;}
+    .products-list {margin-top: 20px;}
+    .products-list a {background: #fff; color: var(--main-text-color); padding: 10px 15px; border-radius: 4px; margin-left: 40px; min-width: 185px;}
+    .products-list a:first-child {margin-left: 0;}
+    .products img {width: 40px; height: 40px;}
+    .products h3 {font-size: 1.15rem; font-weight: normal; margin: 4px 0;}
+    .products a p {font-size: 0.92rem;}
+    .social a {border-radius: 10px; background-color: var(--main-text-color); box-shadow: rgb(0 0 0 / 10%) -2px 2px 2px 1px; color: #fff; border: none; padding: 6px 0; line-height: 24px; min-width: 250px; text-align: center; font-size: 1.1rem;}
+    .social a img, .social a svg {width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;}
+    .social li {margin-left: 40px;}
+    .social li:first-child {margin-left: 0;}
+    .blogs {position: relative; margin-bottom: 20px; padding-left: 10px; padding-right: 10px;}
+    .blogs .title {margin-bottom: 30px; color: var(--main-text-color); font-size: 1.5rem;}
+    .blogs .swiper-wrapper {margin: 0 0 10px;}
+    .blogs-slider .swiper-slide {width: 20%; display: inline-block; vertical-align: top; margin-right: 40px; }
+    .blogs-slider .swiper-slide:last-child {margin-right: 0 !important;}
+    .blogs-slider .img-wrapper {font-size: 0; border-radius: 4px; margin-bottom: 10px; overflow: hidden; border: 2px solid #fff;}
+    .blogs-slider img {width: 100%; height: 120px; border-radius: 4px; -webkit-user-select: none; -ms-user-select: none; user-select: none; object-fit: cover;}
+    .blogs-slider p {font-size: 0.95rem; color: var(--main-text-color);}
+    @media screen and (min-width: 1200px) {
+      .blogs .swiper-wrapper {-webkit-box-pack: justify; -ms-justify-content: space-between; -moz-justify-content: space-between; -o-justify-content: space-between; -webkit-justify-content: space-between; -webkit-justify-content: space-between; justify-content: space-between;}
+    }
+    @media screen and (max-width: 1200px) {
+      .blogs {padding-left: 20px; padding-right: 20px;}
+      .blogs-slider .swiper-slide {margin-right: 20px; margin-bottom: 20px;}
+    }
+    @media screen and (max-width: 768px) {
+      html,body {font-size: 12px}
+      .social li {margin-left: 0; margin-bottom: 10px;}
+      .social li:last-child {margin-bottom: 0;}
+      .products-list a {margin-left: 0; margin-bottom: 10px;}
+      .products-list a:last-child {margin-bottom: 0;}
+      .blogs {padding-left: 10px; padding-right: 10px; margin-bottom: 0; }
+      .blogs .swiper-wrapper {justify-content: center; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -o-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap;}
+      .blogs-slider .swiper-slide {width: 30%; margin-right: 3.3%; }
+      .blogs-slider .swiper-slide:nth-child(3n) {width: 30%; margin-right: 0; }
+    }
+    @media screen and (max-width: 540px) {
+      .blogs-slider img {height: 100px;}
+    }
+  </style>
+</head>
+<body>
+<section class="main main-theme">
+  <h1>An error occurred.</h1>
+  <p>Sorry, the page you are looking for is currently unavailable. Please try again later.</p>
+  <p>If you are the system administrator of this resource then you should check the error log for details.</p>
+  <p>Commercial support is available at <a href="https://secapp.com/">.com</a>.</p>
+</section>
+<section class="social white-theme">
+  <ul>
+    <li>
+      <a class="text-decoration-no flex justify-content-center align-items-center" href="https://www.youtube.com/channel/UCXVmwF-UCScv2ftsGoMqxhw">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-youtube" viewBox="0 0 16 16">
+          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+        </svg>
+        SECAPP YouTube Channel
+      </a>
+    </li>
+  </ul>
+</section>
+<section class="products main-theme">
+  <h2>SECAPP Inc. Products</h2>
+  <p>We solve your unique and complex web problems with our layers of solutions and expertise from over a decade of experience.</p>
+</section>
+<section class="blogs light-theme">
+  <h2 class="title">SECAPP's Official Blog for Technologies & Products.</h2>
+</section>
+</body>
+</html>
